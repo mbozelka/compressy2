@@ -1,0 +1,9 @@
+altgraph==0.14
+macholib==1.8
+modulegraph==0.15
+olefile==0.44
+Pillow==4.2.1
+py2app==0.14
+six==1.10.0
+virtualenv==15.1.0
+wxPython==4.0.0b1

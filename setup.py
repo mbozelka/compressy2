@@ -7,7 +7,7 @@ NAME = "Comrpessy2"
 VERSION = "0.0.1"
 AUTHOR = "Matthew Bozelka"
 AUTHOR_EMAIL = "mattbozelka.dev@gmail.com"
-URL = ""
+URL = "https://github.com/mbozelka/compressy2"
 LICENSE = "MIT"
 YEAR = "2017"
 
@@ -64,6 +64,7 @@ def BuildOSXApp():
     PY2APP_OPTS = dict(iconfile = "Icon.icns",
                        argv_emulation = True,
                        optimize = True,
+                       packages = ['PIL'],
                        plist = PLIST)
     setup(app = [APP,],
           version = VERSION,
