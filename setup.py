@@ -3,7 +3,7 @@ import sys
 import platform
 
 APP = "main.py"
-NAME = "Comrpessy2"
+NAME = "Compressy2"
 VERSION = "0.0.1"
 AUTHOR = "Matthew Bozelka"
 AUTHOR_EMAIL = "mattbozelka.dev@gmail.com"
