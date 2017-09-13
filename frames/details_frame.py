@@ -13,7 +13,7 @@ class DetailsFrame(wx.Frame):
 
         # Set Details View
         self.details_view = DetailsView(self)
-        self.status_set = self.details_view.set_layout(self._files)
+        self.status_set = self.details_view.set_layout(self._files, output_dir)
 
     def compress(self):
         file_count = len(self._files)

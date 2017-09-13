@@ -1,5 +1,4 @@
 import os
-from utils.logger import logger
 
 def clean_up_folder(temp_folder):
 
@@ -12,9 +11,4 @@ def clean_up_folder(temp_folder):
         return True
 
     except Exception as e:
-        logger('clean_up_folder', 'Error in cleaning up direcrory ' + temp_folder)
-        logger('clean_up_folder', e)
         return False
-
-    finally:
-        logger('clean_up_folder', 'Clean up completed')

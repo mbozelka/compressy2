@@ -30,8 +30,6 @@ class DropZone(wx.FileDropTarget):
                         self.target_list.append(entry)
 
             except  Exception as e:
-                print('DragDropView', e)
-                print('DragDropView', 'error adding images')
                 self.clear_target_list()
         
         file_length = len(self.target_list)

@@ -8,7 +8,7 @@ from utils.compressmodeenum import CM_ENUM
 
 class MainFrame(wx.Frame):
     def __init__(self, parent, size, title=''):
-        super(MainFrame, self).__init__(parent, title=title, size=size)
+        super(MainFrame, self).__init__(parent, title=title, size=size, style= wx.SYSTEM_MENU | wx.CAPTION | wx.CLOSE_BOX)
         self._kb_compress_val = None
         self._percent_compress_val = None
         self._compress_mode = None
