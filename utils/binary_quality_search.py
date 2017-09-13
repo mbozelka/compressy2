@@ -1,7 +1,6 @@
 import os
 from PIL import Image
 import random
-from utils.logger import logger
 from utils.create_folder import create_folder
 from utils.clean_up_folder import clean_up_folder
 
@@ -56,7 +55,6 @@ def binary_quality_search(image_path, output_dir, target_val, cb):
                 cb(to_percent(passes, 7))
 
     except Exception as e:
-        logger('binary_quality_search', e)
         return -1
 
     finally:
