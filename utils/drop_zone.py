@@ -36,6 +36,7 @@ class DropZone(wx.FileDropTarget):
         if file_length > 0:
             alert(str(file_length) + ' files ready to be compressed.', 'Files Added')
         self.cb()
+        return True
 
     def _isImage(self, file_path):
         return os.path.splitext(file_path)[1].lower() in ['.jpg', '.png']
