@@ -26,7 +26,7 @@ def BuildPy2Exe():
     OPTS = {"py2exe" : {"compressed" : 1,
             "optimize" : 1,
             "bundle_files" : bundle,
-            "includes" : ["fileEditor", "EditorApp"],
+            "packages": ["PIL"],
             "excludes" : ["Tkinter",],
             "dll_excludes": ["MSVCP90.dll"]}}
 
