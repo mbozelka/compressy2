@@ -4,6 +4,7 @@ import wx
 class DetailsView(wx.ScrolledWindow):
     def __init__(self, parent):
         super(DetailsView, self).__init__(parent)
+        self.parent = parent
 
     def set_layout(self, files, output_dir):
 
@@ -14,7 +15,7 @@ class DetailsView(wx.ScrolledWindow):
         for f in files:
             dir_path, file_name = os.path.split(f)
             _status = wx.StaticText(self, label='Waiting...')
-            _path = wx.StaticText(self, label=output_dir + '/' + file_name)
+            _path = wx.StaticText(self, label=self.parent._get_output_folder(f) + '/' + file_name)
             row = wx.BoxSizer(wx.HORIZONTAL)
             row.Add(_status, 0, wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 10)
             row.Add(_path, 1, wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 10)

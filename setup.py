@@ -4,7 +4,7 @@ import platform
 
 APP = "main.py"
 NAME = "Compressy2"
-VERSION = "0.0.1"
+VERSION = "0.1.0"
 AUTHOR = "Matthew Bozelka"
 AUTHOR_EMAIL = "mattbozelka.dev@gmail.com"
 URL = "https://github.com/mbozelka/compressy2"

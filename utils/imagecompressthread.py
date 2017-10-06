@@ -53,8 +53,8 @@ class ImageCompressThread(threading.Thread):
                     im.save(output, format=format, optimize=True)
                 else:
                     # find the best quality to meet the requirements
-                    target_size = self._get_best_quality(self.image_path, self.output_dir, target_size)
-                    im.save(output, format=format, quality=target_size, optimize=True)
+                    best_quality = self._get_best_quality(self.image_path, self.output_dir, target_size)
+                    im.save(output, format=format, quality=best_quality, optimize=True)
 
             else:
                 # compressing a PNG

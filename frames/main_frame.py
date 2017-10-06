@@ -43,8 +43,8 @@ class MainFrame(wx.Frame):
         files = self._dropTarget.get_target_list()
         file_count = len(files)
 
-        if self._output_dir == None or file_count == 0:
-            alert('You must drop some files and select an output folder.', 'Oops!')
+        if file_count == 0:
+            alert('You have not dropped any files.', 'Oops!')
             return
         
         mode_quality = self._percent_compress_val if self._compress_mode == CM_ENUM['PERCENT'] else self._kb_compress_val

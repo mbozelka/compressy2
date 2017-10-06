@@ -1,3 +1,3 @@
 DEFAULT_MESSAGES = {
-    'OUTPUT_DIR' : 'No Ouput Directory Selected'
+    'OUTPUT_DIR' : 'Select Ouput Directory (Optional)'
 }

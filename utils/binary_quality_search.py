@@ -22,7 +22,7 @@ def binary_quality_search(image_path, output_dir, target_val, cb):
 
         if not create_folder(temp_dir):
             return -1
-        
+
         while low <= high:
 
             mid = (high + low) // 2
