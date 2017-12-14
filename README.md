@@ -7,7 +7,7 @@ It will compress Jpegs to the specified kb (or slightly under), and will optimiz
 
 You can also reduce Jpegs by specifying the percentage. It mathematically reduces the size by that percentage based on the current kb size.
 
-You can specify an output folder, otherwise it will compress the images in an optimized folder within the directory the image currently exists, and you can drag images from multiply folders (or drag entire folders).
+You can specify an output folder, otherwise it will compress the images in an optimized folder within the directory the image currently exists, and you can drag images from multiple folders (or drag entire folders).
 
 NOTE: This will likely not be maintained
 
